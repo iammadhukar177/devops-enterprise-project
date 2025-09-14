@@ -8,8 +8,8 @@ services:
     environment:
       DB_HOST: mysql
       DB_USER: root
-      DB_PASSWORD: rootpass
-      DB_NAME: devopsdb
+      DB_PASSWORD: madhukar.177
+      DB_NAME: enterprise_app
     depends_on:
       - mysql
 
@@ -17,8 +17,8 @@ services:
     image: mysql:8
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: rootpass
-      MYSQL_DATABASE: devopsdb
+      MYSQL_ROOT_PASSWORD: madhukar.177
+      MYSQL_DATABASE: enterprise_app
     volumes:
       - db_data:/var/lib/mysql
       - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql
